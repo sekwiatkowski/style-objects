@@ -12,7 +12,7 @@ function quarterRemHorizontalMargin(units) {
 }
 
 function quarterRemVerticalMargin(units) {
-    return merge(quarterRemMarginLeft(units), quarterRemMarginRight(units))
+    return merge(quarterRemMarginTop(units), quarterRemMarginBottom(units))
 }
 
 export const margin1 = quarterRemMargin(1)

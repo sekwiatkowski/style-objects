@@ -12,7 +12,7 @@ function quarterRemHorizontalPadding(units) {
 }
 
 function quarterRemVerticalPadding(units) {
-    return merge(quarterRemPaddingLeft(units), quarterRemPaddingRight(units))
+    return merge(quarterRemPaddingTop(units), quarterRemPaddingBottom(units))
 }
 
 export const padding1 = quarterRemPadding(1)
