@@ -1,7 +1,5 @@
-import {toString} from 'compose-functions'
-
 export function rems(units) {
-    return toString(units) + 'rem'
+    return units.toString() + 'rem'
 }
 
 export function quarterRem(name) {
