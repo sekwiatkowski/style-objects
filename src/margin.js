@@ -1,14 +1,10 @@
-import {rems} from './rem'
+import {quarterRem} from './rem'
 
-function quarterRemMargin(name) {
-    return units => ({ [name]: rems(units * 0.25) })
-}
-
-const margin = quarterRemMargin('margin')
-const marginTop = quarterRemMargin('marginTop')
-const marginBottom = quarterRemMargin('marginBottom')
-const marginLeft = quarterRemMargin('marginLeft')
-const marginRight = quarterRemMargin('marginRight')
+const margin = quarterRem('margin')
+const marginTop = quarterRem('marginTop')
+const marginBottom = quarterRem('marginBottom')
+const marginLeft = quarterRem('marginLeft')
+const marginRight = quarterRem('marginRight')
 
 export const margin1 = margin(1)
 export const margin2 = margin(2)
@@ -70,4 +66,4 @@ export const marginLeft12 = marginLeft(12)
 export const marginLeft16 = marginLeft(16)
 export const marginLeft20 = marginLeft(20)
 
-export const center = {marginLeft: 'auto', marginRight: 'auto'}
+export const center = {paddingLeft: 'auto', paddingRight: 'auto'}
