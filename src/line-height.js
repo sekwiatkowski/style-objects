@@ -1,11 +1,7 @@
-export const normalLineHeight = {
-    lineHeight: '1.5'
-}
+import {eightRemStyle, remStyle} from './base-unit'
 
-export const relaxedLineHeight = {
-    lineHeight: '1.75'
-}
+export const normalLineHeight = remStyle(1.5)
 
-export const veryRelaxedLineHeight = {
-    lineHeight: '1.75'
-}
+export const relaxedLineHeight = remStyle(1.625)
+
+export const veryRelaxedLineHeight = remStyle(1.75)
