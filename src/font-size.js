@@ -13,3 +13,7 @@ export const slightlyLargerFontSize = eighthRemFontSize(9)
 export const largerFontSize = eighthRemFontSize(10)
 
 export const largeFontSize = eighthRemFontSize(12)
+
+export const veryLargeFontSize = eighthRemFontSize(14)
+
+export const largestFontSize = eighthRemFontSize(16)
