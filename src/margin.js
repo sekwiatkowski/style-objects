@@ -66,4 +66,4 @@ export const marginLeft12 = marginLeft(12)
 export const marginLeft16 = marginLeft(16)
 export const marginLeft20 = marginLeft(20)
 
-export const center = {paddingLeft: 'auto', paddingRight: 'auto'}
+export const center = {marginLeft: 'auto', marginRight: 'auto'}
