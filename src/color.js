@@ -1,7 +1,7 @@
 export function color(color) {
-    return {color: color}
+    return {color}
 }
 
-export function backgroundColor(color) {
-    return {backgroundColor: color}
+export function backgroundColor(backgroundColor) {
+    return {backgroundColor}
 }
