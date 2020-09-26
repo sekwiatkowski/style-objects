@@ -1,6 +1,7 @@
 export * from './color'
 export * from './google-fonts'
 export * from './height'
+export * from './line-height'
 export * from './margin'
 export * from './padding'
 export * from './rem'
