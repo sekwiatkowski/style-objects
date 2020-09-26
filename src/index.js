@@ -1,4 +1,5 @@
 export * from './color'
+export * from './font-size'
 export * from './google-fonts'
 export * from './height'
 export * from './line-height'
