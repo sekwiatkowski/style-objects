@@ -1,10 +1,19 @@
 import {quarterRemStyle} from './base-unit'
+import {merge} from 'compose-functions'
 
 export const quarterRemPadding = quarterRemStyle('padding')
 export const quarterRemPaddingTop = quarterRemStyle('paddingTop')
 export const quarterRemPaddingRight = quarterRemStyle('paddingRight')
 export const quarterRemPaddingBottom = quarterRemStyle('paddingBottom')
 export const quarterRemPaddingLeft = quarterRemStyle('paddingLeft')
+
+function quarterRemHorizontalPadding(units) {
+    return merge(quarterRemPaddingLeft(units), quarterRemPaddingRight(units))
+}
+
+function quarterRemVerticalPadding(units) {
+    return merge(quarterRemPaddingLeft(units), quarterRemPaddingRight(units))
+}
 
 export const padding1 = quarterRemPadding(1)
 export const padding2 = quarterRemPadding(2)
@@ -65,3 +74,27 @@ export const paddingLeft10 = quarterRemPaddingLeft(10)
 export const paddingLeft12 = quarterRemPaddingLeft(12)
 export const paddingLeft16 = quarterRemPaddingLeft(16)
 export const paddingLeft20 = quarterRemPaddingLeft(20)
+
+export const horizontalPadding1 = quarterRemHorizontalPadding(1)
+export const horizontalPadding2 = quarterRemHorizontalPadding(2)
+export const horizontalPadding3 = quarterRemHorizontalPadding(3)
+export const horizontalPadding4 = quarterRemHorizontalPadding(4)
+export const horizontalPadding5 = quarterRemHorizontalPadding(5)
+export const horizontalPadding6 = quarterRemHorizontalPadding(6)
+export const horizontalPadding8 = quarterRemHorizontalPadding(8)
+export const horizontalPadding10 = quarterRemHorizontalPadding(10)
+export const horizontalPadding12 = quarterRemHorizontalPadding(12)
+export const horizontalPadding16 = quarterRemHorizontalPadding(16)
+export const horizontalPadding20 = quarterRemHorizontalPadding(20)
+
+export const verticalPadding1 = quarterRemVerticalPadding(1)
+export const verticalPadding2 = quarterRemVerticalPadding(2)
+export const verticalPadding3 = quarterRemVerticalPadding(3)
+export const verticalPadding4 = quarterRemVerticalPadding(4)
+export const verticalPadding5 = quarterRemVerticalPadding(5)
+export const verticalPadding6 = quarterRemVerticalPadding(6)
+export const verticalPadding8 = quarterRemVerticalPadding(8)
+export const verticalPadding10 = quarterRemVerticalPadding(10)
+export const verticalPadding12 = quarterRemVerticalPadding(12)
+export const verticalPadding16 = quarterRemVerticalPadding(16)
+export const verticalPadding20 = quarterRemVerticalPadding(20)

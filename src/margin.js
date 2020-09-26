@@ -1,10 +1,19 @@
 import {quarterRemStyle} from './base-unit'
+import {merge} from 'compose-functions'
 
 export const quarterRemMargin = quarterRemStyle('margin')
 export const quarterRemMarginTop = quarterRemStyle('marginTop')
 export const quarterRemMarginRight = quarterRemStyle('marginRight')
 export const quarterRemMarginBottom = quarterRemStyle('marginBottom')
 export const quarterRemMarginLeft = quarterRemStyle('marginLeft')
+
+function quarterRemHorizontalMargin(units) {
+    return merge(quarterRemMarginLeft(units), quarterRemMarginRight(units))
+}
+
+function quarterRemVerticalMargin(units) {
+    return merge(quarterRemMarginLeft(units), quarterRemMarginRight(units))
+}
 
 export const margin1 = quarterRemMargin(1)
 export const margin2 = quarterRemMargin(2)
@@ -66,4 +75,26 @@ export const marginLeft12 = quarterRemMarginLeft(12)
 export const marginLeft16 = quarterRemMarginLeft(16)
 export const marginLeft20 = quarterRemMarginLeft(20)
 
-export const center = {marginLeft: 'auto', marginRight: 'auto'}
+export const horizontalMargin1 = quarterRemHorizontalMargin(1)
+export const horizontalMargin2 = quarterRemHorizontalMargin(2)
+export const horizontalMargin3 = quarterRemHorizontalMargin(3)
+export const horizontalMargin4 = quarterRemHorizontalMargin(4)
+export const horizontalMargin5 = quarterRemHorizontalMargin(5)
+export const horizontalMargin6 = quarterRemHorizontalMargin(6)
+export const horizontalMargin8 = quarterRemHorizontalMargin(8)
+export const horizontalMargin10 = quarterRemHorizontalMargin(10)
+export const horizontalMargin12 = quarterRemHorizontalMargin(12)
+export const horizontalMargin16 = quarterRemHorizontalMargin(16)
+export const horizontalMargin20 = quarterRemHorizontalMargin(20)
+
+export const verticalMargin1 = quarterRemVerticalMargin(1)
+export const verticalMargin2 = quarterRemVerticalMargin(2)
+export const verticalMargin3 = quarterRemVerticalMargin(3)
+export const verticalMargin4 = quarterRemVerticalMargin(4)
+export const verticalMargin5 = quarterRemVerticalMargin(5)
+export const verticalMargin6 = quarterRemVerticalMargin(6)
+export const verticalMargin8 = quarterRemVerticalMargin(8)
+export const verticalMargin10 = quarterRemVerticalMargin(10)
+export const verticalMargin12 = quarterRemVerticalMargin(12)
+export const verticalMargin16 = quarterRemVerticalMargin(16)
+export const verticalMargin20 = quarterRemVerticalMargin(20)
