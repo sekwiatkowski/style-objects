@@ -1,26 +1,10 @@
-import {quarterRem} from './rem'
+import {quarterRems} from './rem'
 
-export function margin(margin) {
-    return {margin}
-}
-export function marginTop(marginTop) {
-    return {marginTop}
-}
-export function marginRight(marginRight) {
-    return {marginRight}
-}
-export function marginBottom(marginBottom) {
-    return {marginBottom}
-}
-export function marginLeft(marginLeft) {
-    return {marginLeft}
-}
-
-const quarterRemMargin = quarterRem('margin')
-const quarterRemMarginTop = quarterRem('marginTop')
-const quarterRemMarginRight = quarterRem('marginRight')
-const quarterRemMarginBottom = quarterRem('marginBottom')
-const quarterRemMarginLeft = quarterRem('marginLeft')
+export const quarterRemMargin = quarterRems('margin')
+export const quarterRemMarginTop = quarterRems('marginTop')
+export const quarterRemMarginRight = quarterRem('marginRight')
+export const quarterRemMarginBottom = quarterRems('marginBottom')
+export const quarterRemMarginLeft = quarterRems('marginLeft')
 
 export const margin1 = quarterRemMargin(1)
 export const margin2 = quarterRemMargin(2)

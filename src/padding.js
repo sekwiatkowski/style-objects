@@ -1,26 +1,10 @@
-import {quarterRem} from './rem'
+import {quarterRems} from './rem'
 
-export function padding(padding) {
-    return {padding}
-}
-export function paddingTop(paddingTop) {
-    return {paddingTop}
-}
-export function paddingRight(paddingRight) {
-    return {paddingRight}
-}
-export function paddingBottom(paddingBottom) {
-    return {paddingBottom}
-}
-export function paddingLeft(paddingLeft) {
-    return {paddingLeft}
-}
-
-const quarterRemPadding = quarterRem('padding')
-const quarterRemPaddingTop = quarterRem('paddingTop')
-const quarterRemPaddingRight = quarterRem('paddingRight')
-const quarterRemPaddingLeft = quarterRem('paddingLeft')
-const quarterRemPaddingBottom = quarterRem('paddingBottom')
+const quarterRemPadding = quarterRems('padding')
+const quarterRemPaddingTop = quarterRems('paddingTop')
+const quarterRemPaddingRight = quarterRems('paddingRight')
+const quarterRemPaddingLeft = quarterRems('paddingLeft')
+const quarterRemPaddingBottom = quarterRems('paddingBottom')
 
 export const padding1 = quarterRemPadding(1)
 export const padding2 = quarterRemPadding(2)
