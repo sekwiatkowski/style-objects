@@ -1,4 +1,4 @@
-import {keyValue} from 'compose-functions'
+import {keyValue, toString} from 'compose-functions'
 import {eightRems, quarterRems} from './rem'
 
 export function baseUnitStyle(applyUnits) {
