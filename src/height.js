@@ -2,5 +2,10 @@ function height(height) {
     return { height }
 }
 
-export const fullHeight = height('100%')
 
+function minHeight(minHeight) {
+    return { minHeight }
+}
+
+export const fullHeight = height('100%')
+export const fullMinHeight = minHeight('100%')
