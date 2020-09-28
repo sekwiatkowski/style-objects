@@ -1,11 +1,31 @@
 import {quarterRemStyle} from './base-unit'
 import {merge} from 'compose-functions'
 
-export const quarterRemPadding = quarterRemStyle('padding')
-export const quarterRemPaddingTop = quarterRemStyle('paddingTop')
-export const quarterRemPaddingRight = quarterRemStyle('paddingRight')
-export const quarterRemPaddingBottom = quarterRemStyle('paddingBottom')
-export const quarterRemPaddingLeft = quarterRemStyle('paddingLeft')
+export function padding(value) {
+    return { padding: value }
+}
+
+export function paddingTop(value) {
+    return { paddingTop: value }
+}
+
+export function paddingRight(value) {
+    return { paddingRight: value }
+}
+
+export function paddingBottom(value) {
+    return { paddingBottom: value }
+}
+
+export function paddingLeft(value) {
+    return { paddingLeft: value }
+}
+
+export const quarterRemPadding = quarterRemStyle(padding)
+export const quarterRemPaddingTop = quarterRemStyle(paddingTop)
+export const quarterRemPaddingRight = quarterRemStyle(paddingRight)
+export const quarterRemPaddingBottom = quarterRemStyle(paddingBottom)
+export const quarterRemPaddingLeft = quarterRemStyle(paddingLeft)
 
 function quarterRemHorizontalPadding(units) {
     return merge(quarterRemPaddingLeft(units), quarterRemPaddingRight(units))

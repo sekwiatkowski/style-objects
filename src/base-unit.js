@@ -2,7 +2,7 @@ import {keyValue, toString} from 'compose-functions'
 import {eightRems, quarterRems} from './rem'
 
 export function baseUnitStyle(applyUnits) {
-    return name => units => keyValue(name) (applyUnits(units))
+    return createTag => units => createTag(applyUnits(units))
 }
 
 export const quarterRemStyle = baseUnitStyle(quarterRems)

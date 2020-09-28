@@ -1,11 +1,31 @@
 import {quarterRemStyle} from './base-unit'
 import {merge} from 'compose-functions'
 
-export const quarterRemMargin = quarterRemStyle('margin')
-export const quarterRemMarginTop = quarterRemStyle('marginTop')
-export const quarterRemMarginRight = quarterRemStyle('marginRight')
-export const quarterRemMarginBottom = quarterRemStyle('marginBottom')
-export const quarterRemMarginLeft = quarterRemStyle('marginLeft')
+export function margin(value) {
+    return { margin: value }
+}
+
+export function marginTop(value) {
+    return { marginTop: value }
+}
+
+export function marginRight(value) {
+    return { marginRight: value }
+}
+
+export function marginBottom(value) {
+    return { marginBottom: value }
+}
+
+export function marginLeft(value) {
+    return { marginLeft: value }
+}
+
+export const quarterRemMargin = quarterRemStyle(margin)
+export const quarterRemMarginTop = quarterRemStyle(marginTop)
+export const quarterRemMarginRight = quarterRemStyle(marginRight)
+export const quarterRemMarginBottom = quarterRemStyle(marginBottom)
+export const quarterRemMarginLeft = quarterRemStyle(marginLeft)
 
 function quarterRemHorizontalMargin(units) {
     return merge(quarterRemMarginLeft(units), quarterRemMarginRight(units))

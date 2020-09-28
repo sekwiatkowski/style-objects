@@ -5,11 +5,7 @@ export function height(height) {
 }
 
 
-export function minHeight(minHeight) {
-    return { minHeight }
-}
-
-export const quarterRemHeight = quarterRemStyle('height')
+export const quarterRemHeight = quarterRemStyle(height)
 
 export const height40 = quarterRemHeight(40)
 export const height48 = quarterRemHeight(48)
@@ -21,4 +17,9 @@ export const height88 = quarterRemHeight(88)
 export const height96 = quarterRemHeight(96)
 
 export const fullHeight = height('100%')
+
+export function minHeight(minHeight) {
+    return { minHeight }
+}
+
 export const fullMinHeight = minHeight('100%')
