@@ -2,7 +2,7 @@ export function width(width) {
     return { width }
 }
 
-export function maximumWidth(maxWidth) {
+export function maxWidth(maxWidth) {
     return { maxWidth }
 }
 

@@ -1,11 +1,11 @@
 import {quarterRemStyle} from './base-unit'
 
-function height(height) {
+export function height(height) {
     return { height }
 }
 
 
-function minHeight(minHeight) {
+export function minHeight(minHeight) {
     return { minHeight }
 }
 
