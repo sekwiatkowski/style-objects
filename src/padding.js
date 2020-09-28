@@ -1,24 +1,24 @@
 import {quarterRemStyle} from './base-unit'
 import {merge} from 'compose-functions'
 
-export function padding(value) {
-    return { padding: value }
+export function padding(padding) {
+    return { padding }
 }
 
-export function paddingTop(value) {
-    return { paddingTop: value }
+export function paddingTop(paddingTop) {
+    return { paddingTop }
 }
 
-export function paddingRight(value) {
-    return { paddingRight: value }
+export function marginRight(paddingRight) {
+    return { paddingRight }
 }
 
-export function paddingBottom(value) {
-    return { paddingBottom: value }
+export function paddingBottom(paddingBottom) {
+    return { paddingBottom }
 }
 
-export function paddingLeft(value) {
-    return { paddingLeft: value }
+export function paddingLeft(paddingLeft) {
+    return { paddingLeft }
 }
 
 export const quarterRemPadding = quarterRemStyle(padding)

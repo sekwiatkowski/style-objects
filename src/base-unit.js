@@ -7,6 +7,6 @@ export function baseUnitStyle(applyUnits) {
 
 export const quarterRemStyle = baseUnitStyle(quarterRems)
 
-export const eightRemStyle = baseUnitStyle(eightRems)
+export const eighthRemStyle = baseUnitStyle(eightRems)
 
 export const absoluteStyle = baseUnitStyle(toString)

@@ -1,6 +1,10 @@
-import {eightRemStyle} from './base-unit'
+import {eighthRemStyle} from './base-unit'
 
-const eighthRemFontSize = eightRemStyle('fontSize')
+export function fontSize(fontSize) {
+    return { fontSize }
+}
+
+const eighthRemFontSize = eighthRemStyle(fontSize)
 
 export const smallFontSize = eighthRemFontSize(6)
 
