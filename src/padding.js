@@ -9,7 +9,7 @@ export function paddingTop(paddingTop) {
     return { paddingTop }
 }
 
-export function marginRight(paddingRight) {
+export function paddingRight(paddingRight) {
     return { paddingRight }
 }
 
