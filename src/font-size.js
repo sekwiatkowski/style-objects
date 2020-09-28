@@ -6,6 +6,8 @@ export function fontSize(fontSize) {
 
 const eighthRemFontSize = eighthRemStyle(fontSize)
 
+export const verySmallFontSize = eighthRemFontSize(5)
+
 export const smallFontSize = eighthRemFontSize(6)
 
 export const smallerFontSize = eighthRemFontSize(7)
