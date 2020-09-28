@@ -17,7 +17,7 @@ export function transform(transformations) {
 
 function transformOrigin(input) {
     return {
-        transformOrigin: isString(input) ? input : joinWithSpace(arr)
+        transformOrigin: isString(input) ? input : joinWithSpace(input)
     }
 }
 
