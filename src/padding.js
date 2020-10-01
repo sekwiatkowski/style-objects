@@ -21,11 +21,11 @@ export function paddingLeft(paddingLeft) {
     return { paddingLeft }
 }
 
-export function horizontalPadding(value) {
+export function verticalPadding(value) {
     return merge(paddingTop(value), paddingBottom(value))
 }
 
-export function verticalPadding(value) {
+export function horizontalPadding(value) {
     return merge(paddingRight(value), paddingLeft(value))
 }
 
