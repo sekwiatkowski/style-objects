@@ -7,8 +7,8 @@ function rotate(degrees) {
 export const rotateBy90Degrees = rotate(90)
 export const rotateBy180Degrees = rotate(180)
 
-export function transform(transformations) {
+export function transform(...transformations) {
     return {
-        transform: Array.isArray(transformations) ? joinWithCommaSpace(transformations) : input
+        transform: joinWithCommaSpace(transformations)
     }
 }
