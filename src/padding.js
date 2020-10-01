@@ -21,19 +21,21 @@ export function paddingLeft(paddingLeft) {
     return { paddingLeft }
 }
 
-export const quarterRemPadding = quarterRemStyle(padding)
-export const quarterRemPaddingTop = quarterRemStyle(paddingTop)
-export const quarterRemPaddingRight = quarterRemStyle(paddingRight)
-export const quarterRemPaddingBottom = quarterRemStyle(paddingBottom)
-export const quarterRemPaddingLeft = quarterRemStyle(paddingLeft)
-
-function quarterRemHorizontalPadding(units) {
-    return merge(quarterRemPaddingLeft(units), quarterRemPaddingRight(units))
+export function horizontalPadding(value) {
+    return merge(paddingTop(value), paddingBottom(value))
 }
 
-function quarterRemVerticalPadding(units) {
-    return merge(quarterRemPaddingTop(units), quarterRemPaddingBottom(units))
+export function verticalPadding(value) {
+    return merge(paddingRight(value), paddingLeft(value))
 }
+
+const quarterRemPadding = quarterRemStyle(padding)
+const quarterRemPaddingTop = quarterRemStyle(paddingTop)
+const quarterRemPaddingRight = quarterRemStyle(paddingRight)
+const quarterRemPaddingBottom = quarterRemStyle(paddingBottom)
+const quarterRemPaddingLeft = quarterRemStyle(paddingLeft)
+const quarterRemHorizontalPadding = quarterRemStyle(horizontalPadding)
+const quarterRemVerticalPadding = quarterRemStyle(verticalPadding)
 
 export const padding1 = quarterRemPadding(1)
 export const padding2 = quarterRemPadding(2)
