@@ -29,7 +29,7 @@ function radius(radius) {
     return merge(leftRadius(radius), rightRadius(radius))
 }
 
-const eighthRemRadius = quarterRemStyle(radius())
+const eighthRemRadius = quarterRemStyle(radius)
 const eighthRemLeftRadius = quarterRemStyle(leftRadius)
 const eighthRemRightRadius = quarterRemStyle(rightRadius)
 
