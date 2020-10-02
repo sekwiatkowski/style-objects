@@ -1,4 +1,4 @@
-import {quarterRemStyle} from './base-unit'
+import {eighthRemStyle} from './base-unit'
 import {merge} from 'compose-functions'
 
 function topRightRadius(borderTopRightRadius) {
@@ -29,9 +29,9 @@ function radius(radius) {
     return merge(leftRadius(radius), rightRadius(radius))
 }
 
-const eighthRemRadius = quarterRemStyle(radius)
-const eighthRemLeftRadius = quarterRemStyle(leftRadius)
-const eighthRemRightRadius = quarterRemStyle(rightRadius)
+const eighthRemRadius = eighthRemStyle(radius)
+const eighthRemLeftRadius = eighthRemStyle(leftRadius)
+const eighthRemRightRadius = eighthRemStyle(rightRadius)
 
 export const leftRadius1 = eighthRemLeftRadius(1)
 export const leftRadius2 = eighthRemLeftRadius(2)
