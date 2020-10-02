@@ -1,6 +1,7 @@
-function position({position}) {
+function position(position) {
     return { position }
 }
 
 export const relative = position('relative')
 export const absolute = position('absolute')
+
