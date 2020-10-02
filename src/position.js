@@ -3,4 +3,4 @@ function position({position}) {
 }
 
 export const relative = position('relative')
-export const absolute = position('relative')
+export const absolute = position('absolute')
