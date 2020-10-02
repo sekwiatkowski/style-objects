@@ -7,6 +7,9 @@ export function height(height) {
 
 export const quarterRemHeight = quarterRemStyle(height)
 
+export const height16 = quarterRemHeight(16)
+export const height24 = quarterRemHeight(24)
+export const height32 = quarterRemHeight(32)
 export const height40 = quarterRemHeight(40)
 export const height48 = quarterRemHeight(48)
 export const height56 = quarterRemHeight(56)

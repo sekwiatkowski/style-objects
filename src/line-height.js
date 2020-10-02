@@ -1,6 +1,6 @@
 import {absoluteStyle} from './base-unit'
 
-const lineHeight = absoluteStyle(lineHeight => ({ lineHeight }))
+export const lineHeight = absoluteStyle(lineHeight => ({ lineHeight }))
 
 export const normalLineHeight = lineHeight(1.5)
 
