@@ -8,3 +8,4 @@ export function maxWidth(maxWidth) {
 
 export const fullWidth = width('100%')
 
+export const thirdWidth = width('33.33333%')
