@@ -19,6 +19,7 @@ function justifyContent(justifyContent) {
 }
 
 export const justifyContentCenter = justifyContent('center')
+export const justifyContentSpaceBetween = justifyContent('space-between')
 export const justifyContentFlexStart = justifyContent('flex-start')
 export const justifyContentFlexEnd = justifyContent('flex-end')
 
