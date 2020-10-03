@@ -30,6 +30,10 @@ export const justifySelfCenter = justifySelf('center')
 export const justifySelfFlexStart = justifySelf('flex-start')
 export const justifySelfFlexEnd = justifySelf('flex-end')
 
-export const centerText = {
-    textAlign: 'Center'
+function textAlign(textAlign) {
+    return { textAlign }
 }
+
+export const centerText = textAlign('center')
+
+export const justifyText = textAlign('justify')
