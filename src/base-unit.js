@@ -1,5 +1,5 @@
 import {keyValue, toString} from 'compose-functions'
-import {eightRems, quarterRems} from './rem'
+import {eighthRems, quarterRems, sixteenthRems} from './rem'
 
 export function baseUnitStyle(applyUnits) {
     return createTag => units => createTag(applyUnits(units))
@@ -7,6 +7,8 @@ export function baseUnitStyle(applyUnits) {
 
 export const quarterRemStyle = baseUnitStyle(quarterRems)
 
-export const eighthRemStyle = baseUnitStyle(eightRems)
+export const eighthRemStyle = baseUnitStyle(eighthRems)
+
+export const sixteenthRemStyle = baseUnitStyle(sixteenthRems)
 
 export const absoluteStyle = baseUnitStyle(toString)
