@@ -21,19 +21,21 @@ export function marginLeft(marginLeft) {
     return { marginLeft }
 }
 
+export function verticalMargin(value) {
+    return merge(marginTop(value), marginBottom(value))
+}
+
+export function horizontalMargin(value) {
+    return merge(marginRight(value), marginLeft(value))
+}
+
 export const quarterRemMargin = quarterRemStyle(margin)
 export const quarterRemMarginTop = quarterRemStyle(marginTop)
 export const quarterRemMarginRight = quarterRemStyle(marginRight)
 export const quarterRemMarginBottom = quarterRemStyle(marginBottom)
 export const quarterRemMarginLeft = quarterRemStyle(marginLeft)
-
-function quarterRemHorizontalMargin(units) {
-    return merge(quarterRemMarginLeft(units), quarterRemMarginRight(units))
-}
-
-function quarterRemVerticalMargin(units) {
-    return merge(quarterRemMarginTop(units), quarterRemMarginBottom(units))
-}
+export const quarterRemHorizontalMargin = quarterRemStyle(horizontalMargin)
+export const quarterRemVerticalMargin = quarterRemStyle(verticalMargin)
 
 export const margin1 = quarterRemMargin(1)
 export const margin2 = quarterRemMargin(2)
