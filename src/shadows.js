@@ -9,3 +9,5 @@ export function boxShadow(...shadows) {
         boxShadow: joinWithCommaSpace(shadows)
     }
 }
+
+export const noBoxShadow = boxShadow('none')
