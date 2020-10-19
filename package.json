@@ -1,6 +1,6 @@
 {
     "name": "style-objects",
-    "version": "0.11.8",
+    "version": "0.12.0",
     "main": "src/index.js",
     "type": "module",
     "dependencies": {
