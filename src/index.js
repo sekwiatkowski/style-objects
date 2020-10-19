@@ -1,6 +1,7 @@
 export * from './alignment'
 export * from './border'
 export * from './color'
+export * from './cursor'
 export * from './flexbox'
 export * from './font-size'
 export * from './font-weight'
