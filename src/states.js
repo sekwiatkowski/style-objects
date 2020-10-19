@@ -21,5 +21,5 @@ export function active(...styles) {
 }
 
 export function focus(...styles) {
-    return state ('active') (styles)
+    return state ('focus') (styles)
 }
