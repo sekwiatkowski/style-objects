@@ -1,4 +1,4 @@
-import {joinWithSpace, keyValue} from 'compose-functions'
+import {capitalize, joinWithSpace, keyValue} from 'compose-functions'
 
 function createBorder(property) {
     return (width, style, color) => keyValue(property) (joinWithSpace([width, style, color]))
@@ -11,32 +11,31 @@ export const borderRight = createBorder('borderRight')
 export const borderBottom = createBorder('borderBottom')
 export const borderLeft = createBorder('borderLeft')
 
-export function createBorderWidth(side) {
-    return width => ({[side]: width})
+export function borderSideProperty(side) {
+    return property => value => {
+        const key = 'border' + capitalize(side) + capitalize(property)
+
+        return ({[key]: value})
+    }
 }
 
-export const borderWidth = createBorderWidth('border')
-export const borderTopWidth = createBorderWidth('borderTop')
-export const borderRightWidth = createBorderWidth('borderRight')
-export const borderBottomWidth = createBorderWidth('borderBottom')
-export const borderLeftWidth = createBorderWidth('borderLeft')
+const topBorderProperty = borderSideProperty('top')
+const rightBorderProperty = borderSideProperty('right')
+const bottomBorderProperty = borderSideProperty('bottom')
+const leftBorderProperty = borderSideProperty('left')
 
-export function createBorderStyle(side) {
-    return width => ({[side]: width})
-}
+export const topBorderWidth = topBorderProperty('width')
+export const topBorderStyle = topBorderProperty('style')
+export const topBorderColor = topBorderProperty('color')
 
-export const borderStyle = createBorderStyle('border')
-export const borderTopStyle = createBorderStyle('borderTop')
-export const borderRightStyle = createBorderStyle('borderRight')
-export const borderBottomStyle = createBorderStyle('borderBottom')
-export const borderLeftStyle = createBorderStyle('borderLeft')
+export const rightBorderWidth = rightBorderProperty('width')
+export const rightBorderStyle = rightBorderProperty('style')
+export const rightBorderColor = rightBorderProperty('color')
 
-export function createBorderColor(side) {
-    return width => ({[side]: width})
-}
+export const bottomBorderWidth = bottomBorderProperty('width')
+export const bottomBorderStyle = bottomBorderProperty('style')
+export const bottomBorderColor = bottomBorderProperty('color')
 
-export const borderColor = createBorderColor('border')
-export const borderTopColor = createBorderColor('borderTop')
-export const borderRightColor = createBorderColor('borderRight')
-export const borderBottomColor = createBorderColor('borderBottom')
-export const borderLeftColor = createBorderColor('borderLeft')
+export const leftBorderWidth = leftBorderProperty('width')
+export const leftBorderStyle = leftBorderProperty('style')
+export const leftBorderColor = leftBorderProperty('color')
