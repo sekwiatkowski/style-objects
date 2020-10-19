@@ -12,7 +12,7 @@ export const borderBottom = createBorder('borderBottom')
 export const borderLeft = createBorder('borderLeft')
 
 export function createBorderWidth(side) {
-    return width => ({side: width})
+    return width => ({[side]: width})
 }
 
 export const borderWidth = createBorderWidth('border')
@@ -22,7 +22,7 @@ export const borderBottomWidth = createBorderWidth('borderBottom')
 export const borderLeftWidth = createBorderWidth('borderLeft')
 
 export function createBorderStyle(side) {
-    return width => ({side: width})
+    return width => ({[side]: width})
 }
 
 export const borderStyle = createBorderStyle('border')
@@ -32,7 +32,7 @@ export const borderBottomStyle = createBorderStyle('borderBottom')
 export const borderLeftStyle = createBorderStyle('borderLeft')
 
 export function createBorderColor(side) {
-    return width => ({side: width})
+    return width => ({[side]: width})
 }
 
 export const borderColor = createBorderColor('border')
