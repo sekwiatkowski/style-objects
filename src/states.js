@@ -19,3 +19,7 @@ export function hover(...styles) {
 export function active(...styles) {
     return state ('active') (styles)
 }
+
+export function focus(...styles) {
+    return state ('active') (styles)
+}
