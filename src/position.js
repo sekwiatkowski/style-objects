@@ -5,8 +5,8 @@ function position(position) {
 export const relative = position('relative')
 export const absolute = position('absolute')
 
-export function top(left) {
-    return { left }
+export function top(top) {
+    return { top }
 }
 
 export const top0 = top('0')
