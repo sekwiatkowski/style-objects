@@ -26,3 +26,7 @@ export function minHeight(minHeight) {
 }
 
 export const fullMinHeight = minHeight('100%')
+
+export function maxHeight(maxHeight) {
+    return { maxHeight }
+}
