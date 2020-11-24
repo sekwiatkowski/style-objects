@@ -1,1 +1,1 @@
-const disableDragging = {WebkitUserDrag: 'none'}
+export const disableDragging = {WebkitUserDrag: 'none'}
