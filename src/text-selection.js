@@ -1,1 +1,1 @@
-const disableTextSelection = {userSelect: 'none'}
+export const disableTextSelection = {userSelect: 'none'}
