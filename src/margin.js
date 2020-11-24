@@ -1,5 +1,5 @@
 import {quarterRemStyle} from './base-unit'
-import {merge} from 'compose-functions'
+import {merge} from 'standard-functions'
 
 export function margin(margin) {
     return { margin }
