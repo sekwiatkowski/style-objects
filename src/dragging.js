@@ -1,0 +1,1 @@
+const disableDragging = {WebkitUserDrag: 'none'}
