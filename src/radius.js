@@ -25,8 +25,8 @@ function leftRadius(radius) {
     return merge(topLeftRadius(radius), bottomLeftRadius(radius))
 }
 
-function radius(radius) {
-    return merge(leftRadius(radius), rightRadius(radius))
+function radius(borderRadius) {
+    return {borderRadius}
 }
 
 const eighthRemRadius = eighthRemStyle(radius)
@@ -44,3 +44,5 @@ export const rightRadius3 = eighthRemRightRadius(3)
 export const radius1 = eighthRemRadius(1)
 export const radius2 = eighthRemRadius(2)
 export const radius3 = eighthRemRadius(3)
+
+export const fullyRounded = radius('9999px')
