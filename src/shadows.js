@@ -1,4 +1,4 @@
-import {joinWithCommaSpace, joinWithSpace} from 'compose-functions'
+import {joinWithCommaSpace, joinWithSpace} from 'standard-functions'
 
 export function shadow(offsetX, offsetY, blur, spreadRadius, color) {
     return joinWithSpace([offsetX, offsetY, blur, spreadRadius, color])

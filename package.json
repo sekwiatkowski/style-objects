@@ -1,9 +1,9 @@
 {
     "name": "style-objects",
-    "version": "0.13.0",
+    "version": "0.13.1",
     "main": "src/index.js",
     "type": "module",
     "dependencies": {
-        "compose-functions": "github:sekwiatkowski/compose-functions#v0.14.4"
+        "standard-functions": "github:sekwiatkowski/standard-functions#v0.21.0"
     }
 }

@@ -1,4 +1,4 @@
-import {toString} from 'compose-functions'
+import {toString} from 'standard-functions'
 import {eighths, quarters, sixteenths} from './fractions'
 
 export function rems(units) {

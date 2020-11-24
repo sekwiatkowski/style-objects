@@ -1,4 +1,4 @@
-import {joinWithCommaSpace} from 'compose-functions'
+import {joinWithCommaSpace} from 'standard-functions'
 
 function rotate(degrees) {
     return `rotate(${degrees}deg)`

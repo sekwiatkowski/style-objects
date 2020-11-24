@@ -1,5 +1,5 @@
 import {eighthRemStyle} from './base-unit'
-import {merge} from 'compose-functions'
+import {merge} from 'standard-functions'
 
 function topRightRadius(borderTopRightRadius) {
     return { borderTopRightRadius }
