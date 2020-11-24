@@ -1,0 +1,1 @@
+const disableTextSelection = {userSelect: 'none'}
