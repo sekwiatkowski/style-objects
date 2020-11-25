@@ -29,6 +29,8 @@ export function horizontalMargin(value) {
     return merge(marginRight(value), marginLeft(value))
 }
 
+export const autoMargin = margin('auto')
+
 export const quarterRemMargin = quarterRemStyle(margin)
 export const quarterRemMarginTop = quarterRemStyle(marginTop)
 export const quarterRemMarginRight = quarterRemStyle(marginRight)
