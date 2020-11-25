@@ -5,4 +5,4 @@ export function visibility(visibility) {
 }
 
 export const visible = visibility('visible')
-export const hidden = visibility('hidden')
+export const invisible = visibility('hidden')
