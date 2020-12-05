@@ -4,4 +4,7 @@ function display(display) {
     }
 }
 
+export const block = display('block')
+export const inline = display('inline')
+
 export const hidden = display('none')
