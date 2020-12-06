@@ -3,6 +3,8 @@ function fontWeight(fontWeight) {
 }
 
 
+export const regular = fontWeight(400)
+
 export const medium = fontWeight(500)
 
 export const semiBold = fontWeight(600)
