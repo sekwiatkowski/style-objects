@@ -1,7 +1,7 @@
 import {capitalize, joinWithSpace, keyValue} from 'standard-functions'
 
 function createBorder(property) {
-    return (width, style, color) => keyValue(property) (joinWithSpace([width, style, color]))
+    return (width, style, color) => keyValue(property) (joinWithSpace(width, style, color))
 }
 
 export const border = createBorder('border')
