@@ -24,6 +24,10 @@ export function focus(...styles) {
     return modifier ('focus') (styles)
 }
 
+export function focusVisible(...styles) {
+    return modifier ('focus-visible') (styles)
+}
+
 export function before(...styles) {
     return modifier ('before') (styles)
 }
