@@ -1,4 +1,5 @@
 export * from './alignment'
+export * from './background-image'
 export * from './border'
 export * from './color'
 export * from './content'
