@@ -4,6 +4,7 @@ function position(position) {
 
 export const relative = position('relative')
 export const absolute = position('absolute')
+export const fixed = position('fixed')
 
 export function top(top) {
     return { top }
