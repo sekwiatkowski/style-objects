@@ -1,9 +1,9 @@
 {
     "name": "style-objects",
-    "version": "0.17.5",
+    "version": "0.17.6",
     "main": "src/index.js",
     "type": "module",
     "dependencies": {
-        "standard-functions": "github:sekwiatkowski/standard-functions#v0.25.6"
+        "standard-functions": "github:sekwiatkowski/standard-functions#v0.26.4"
     }
 }
