@@ -35,22 +35,31 @@ const borderTopProperty = sideBorderProperty('top')
 export const borderTopWidth = borderTopProperty('width')
 export const borderTopStyle = borderTopProperty('style')
 export const borderTopColor = borderTopProperty('color')
-export const noTopBorder = borderTopWidth('none')
 
 const borderRightProperty = sideBorderProperty('right')
 export const borderRightWidth = borderRightProperty('width')
 export const borderRightStyle = borderRightProperty('style')
 export const borderRightColor = borderRightProperty('color')
-export const noRightBorder = borderRightWidth('none')
 
 const borderBottomProperty = sideBorderProperty('bottom')
 export const borderBottomWidth = borderBottomProperty('width')
 export const borderBottomStyle = borderBottomProperty('style')
 export const borderBottomColor = borderBottomProperty('color')
-export const noBottomBorder = borderBottomWidth('none')
 
 const borderLeftProperty = sideBorderProperty('left')
 export const borderLeftWidth = borderLeftProperty('width')
 export const borderLeftStyle = borderLeftProperty('style')
 export const borderLeftColor = borderLeftProperty('color')
-export const noLeftBorder = borderLeftWidth('none')
+
+function noBorder(side) {
+    const key = 'border' + capitalize(side)
+
+    return {
+        [key]: 'none'
+    }
+}
+
+export const noTopBorder = noBorder('top')
+export const noRightBorder = noBorder('right')
+export const noBottomBorder = noBorder('bottom')
+export const noLeftBorder = noBorder('left')
