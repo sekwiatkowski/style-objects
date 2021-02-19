@@ -20,14 +20,16 @@ export const height80 = quarterRemHeight(80)
 export const height88 = quarterRemHeight(88)
 export const height96 = quarterRemHeight(96)
 
+export const thirdHeight = height('33.33333%')
+export const halfHeight = height('50%')
 export const fullHeight = height('100%')
 
 export function minHeight(minHeight) {
     return { minHeight }
 }
 
-export const fullMinHeight = minHeight('100%')
-
 export function maxHeight(maxHeight) {
     return { maxHeight }
 }
+
+export const fullMinHeight = minHeight('100%')
