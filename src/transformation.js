@@ -1,15 +1,24 @@
 import {joinWithCommaSpace} from 'standard-functions'
+import {degrees} from './degrees'
 
 function rotate(degrees) {
-    return `rotate(${degrees}deg)`
+    return `rotate(${degrees})`
 }
 
 export function scale(factor) {
     return `scale(${factor})`
 }
 
-export const rotateBy90Degrees = rotate(90)
-export const rotateBy180Degrees = rotate(180)
+export function skewX(skewX) {
+    return `skewX(${skewX})`
+}
+
+export function skewY(skewY) {
+    return `skewY(${skewY})`
+}
+
+export const rotateBy90Degrees = rotate(degrees(90))
+export const rotateBy180Degrees = rotate(degrees(180))
 
 export function transform(...transformations) {
     return {
