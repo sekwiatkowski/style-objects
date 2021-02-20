@@ -1,6 +1,7 @@
 export * from './alignment'
 export * from './background-image'
 export * from './border'
+export * from './calculation'
 export * from './color'
 export * from './content'
 export * from './cursor'
