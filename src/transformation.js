@@ -16,3 +16,9 @@ export function transform(...transformations) {
         transform: joinWithCommaSpace(transformations)
     }
 }
+
+export function transformOrigin(transformOrigin) {
+    return {
+        transformOrigin
+    }
+}
