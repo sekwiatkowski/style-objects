@@ -52,11 +52,8 @@ export const borderLeftStyle = borderLeftProperty('style')
 export const borderLeftColor = borderLeftProperty('color')
 
 function noBorder(side) {
-    const key = 'border' + capitalize(side)
-
-    return {
-        [key]: 'none'
-    }
+    // The use of "border-[side]: none" caused issues on page changes.
+    return sideBorderProperty(side) ('width') ('0')
 }
 
 export const noTopBorder = noBorder('top')
