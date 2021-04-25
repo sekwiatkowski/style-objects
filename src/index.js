@@ -1,5 +1,6 @@
 export * from './background-image'
 export * from './border'
+export * from './box-sizing'
 export * from './calculation'
 export * from './color'
 export * from './content'
