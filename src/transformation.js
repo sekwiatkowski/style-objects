@@ -1,7 +1,7 @@
 import {joinWithCommaSpace} from 'standard-functions'
 import {degrees} from './degrees'
 
-function rotate(degrees) {
+export function rotate(degrees) {
     return `rotate(${degrees})`
 }
 
