@@ -17,8 +17,13 @@ export function skewY(skewY) {
     return `skewY(${skewY})`
 }
 
+export const rotateBy45Degrees = rotate(degrees(45))
 export const rotateBy90Degrees = rotate(degrees(90))
 export const rotateBy180Degrees = rotate(degrees(180))
+
+export const rotateByMinus45Degrees = rotate(degrees(-45))
+export const rotateByMinus90Degrees = rotate(degrees(-90))
+export const rotateByMinus180Degrees = rotate(degrees(-180))
 
 export function transform(...transformations) {
     return {
