@@ -1,31 +1,31 @@
 import {sixteenthRemStyle} from './base-unit'
 import {merge} from 'standard-functions'
 
-function topRightRadius(borderTopRightRadius) {
+export function topRightRadius(borderTopRightRadius) {
     return { borderTopRightRadius }
 }
 
-function bottomRightRadius(borderBottomRightRadius) {
-    return { borderBottomRightRadius }
-}
-
-function rightRadius(radius) {
+export function rightRadius(radius) {
     return merge(topRightRadius(radius), bottomRightRadius(radius))
 }
 
-function bottomLeftRadius(borderBottomLeftRadius) {
+export function bottomRightRadius(borderBottomRightRadius) {
+    return { borderBottomRightRadius }
+}
+
+export function bottomLeftRadius(borderBottomLeftRadius) {
     return { borderBottomLeftRadius }
 }
 
-function topLeftRadius(borderTopLeftRadius) {
-    return { borderTopLeftRadius }
-}
-
-function leftRadius(radius) {
+export function leftRadius(radius) {
     return merge(topLeftRadius(radius), bottomLeftRadius(radius))
 }
 
-function radius(borderRadius) {
+export function topLeftRadius(borderTopLeftRadius) {
+    return { borderTopLeftRadius }
+}
+
+export function radius(borderRadius) {
     return {borderRadius}
 }
 
