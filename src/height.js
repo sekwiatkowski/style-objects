@@ -4,11 +4,19 @@ export function height(height) {
     return { height }
 }
 
-
 export const quarterRemHeight = quarterRemStyle(height)
 
+export const height1 = quarterRemHeight(1)
+export const height2 = quarterRemHeight(2)
+export const height3 = quarterRemHeight(3)
+export const height4 = quarterRemHeight(4)
+export const height5 = quarterRemHeight(5)
+export const height6 = quarterRemHeight(6)
 export const height8 = quarterRemHeight(8)
+export const height10 = quarterRemHeight(10)
+export const height12 = quarterRemHeight(12)
 export const height16 = quarterRemHeight(16)
+export const height20 = quarterRemHeight(20)
 export const height24 = quarterRemHeight(24)
 export const height32 = quarterRemHeight(32)
 export const height40 = quarterRemHeight(40)
