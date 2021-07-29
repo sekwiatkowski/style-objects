@@ -1,9 +1,24 @@
-export function calc(calculation) {
-  return `calc(${calculation})`;
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.calc = calc;
+exports.add = add;
+exports.subtract = subtract;
+
+function calc(calculation) {
+  return "calc(".concat(calculation, ")");
 }
-export function add(a) {
-  return b => `${a} + ${b}`;
+
+function add(a) {
+  return function (b) {
+    return "".concat(a, " + ").concat(b);
+  };
 }
-export function subtract(a) {
-  return b => `${a} - ${b}`;
+
+function subtract(a) {
+  return function (b) {
+    return "".concat(a, " - ").concat(b);
+  };
 }

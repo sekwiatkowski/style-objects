@@ -1,30 +1,61 @@
-import { joinWithCommaSpace } from 'standard-functions';
-import { degrees } from './degrees.js';
-export function rotate(degrees) {
-  return `rotate(${degrees})`;
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.rotate = rotate;
+exports.scale = scale;
+exports.skewX = skewX;
+exports.skewY = skewY;
+exports.transform = transform;
+exports.transformOrigin = transformOrigin;
+exports.rotateByMinus180Degrees = exports.rotateByMinus90Degrees = exports.rotateByMinus45Degrees = exports.rotateBy180Degrees = exports.rotateBy90Degrees = exports.rotateBy45Degrees = void 0;
+
+var _standardFunctions = require("standard-functions");
+
+var _degrees = require("./degrees.js");
+
+function rotate(degrees) {
+  return "rotate(".concat(degrees, ")");
 }
-export function scale(factor) {
-  return `scale(${factor})`;
+
+function scale(factor) {
+  return "scale(".concat(factor, ")");
 }
-export function skewX(skewX) {
-  return `skewX(${skewX})`;
+
+function skewX(skewX) {
+  return "skewX(".concat(skewX, ")");
 }
-export function skewY(skewY) {
-  return `skewY(${skewY})`;
+
+function skewY(skewY) {
+  return "skewY(".concat(skewY, ")");
 }
-export const rotateBy45Degrees = rotate(degrees(45));
-export const rotateBy90Degrees = rotate(degrees(90));
-export const rotateBy180Degrees = rotate(degrees(180));
-export const rotateByMinus45Degrees = rotate(degrees(-45));
-export const rotateByMinus90Degrees = rotate(degrees(-90));
-export const rotateByMinus180Degrees = rotate(degrees(-180));
-export function transform(...transformations) {
+
+var rotateBy45Degrees = rotate((0, _degrees.degrees)(45));
+exports.rotateBy45Degrees = rotateBy45Degrees;
+var rotateBy90Degrees = rotate((0, _degrees.degrees)(90));
+exports.rotateBy90Degrees = rotateBy90Degrees;
+var rotateBy180Degrees = rotate((0, _degrees.degrees)(180));
+exports.rotateBy180Degrees = rotateBy180Degrees;
+var rotateByMinus45Degrees = rotate((0, _degrees.degrees)(-45));
+exports.rotateByMinus45Degrees = rotateByMinus45Degrees;
+var rotateByMinus90Degrees = rotate((0, _degrees.degrees)(-90));
+exports.rotateByMinus90Degrees = rotateByMinus90Degrees;
+var rotateByMinus180Degrees = rotate((0, _degrees.degrees)(-180));
+exports.rotateByMinus180Degrees = rotateByMinus180Degrees;
+
+function transform() {
+  for (var _len = arguments.length, transformations = new Array(_len), _key = 0; _key < _len; _key++) {
+    transformations[_key] = arguments[_key];
+  }
+
   return {
-    transform: joinWithCommaSpace(transformations)
+    transform: (0, _standardFunctions.joinWithCommaSpace)(transformations)
   };
 }
-export function transformOrigin(transformOrigin) {
+
+function transformOrigin(transformOrigin) {
   return {
-    transformOrigin
+    transformOrigin: transformOrigin
   };
 }

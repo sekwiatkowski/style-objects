@@ -1,10 +1,27 @@
-import { joinWithCommaSpace, joinWithSpace } from 'standard-functions';
-export function shadow(offsetX, offsetY, blur, spreadRadius, color) {
-  return joinWithSpace(offsetX, offsetY, blur, spreadRadius, color);
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.shadow = shadow;
+exports.boxShadow = boxShadow;
+exports.noBoxShadow = void 0;
+
+var _standardFunctions = require("standard-functions");
+
+function shadow(offsetX, offsetY, blur, spreadRadius, color) {
+  return (0, _standardFunctions.joinWithSpace)(offsetX, offsetY, blur, spreadRadius, color);
 }
-export function boxShadow(...shadows) {
+
+function boxShadow() {
+  for (var _len = arguments.length, shadows = new Array(_len), _key = 0; _key < _len; _key++) {
+    shadows[_key] = arguments[_key];
+  }
+
   return {
-    boxShadow: joinWithCommaSpace(shadows)
+    boxShadow: (0, _standardFunctions.joinWithCommaSpace)(shadows)
   };
 }
-export const noBoxShadow = boxShadow('none');
+
+var noBoxShadow = boxShadow('none');
+exports.noBoxShadow = noBoxShadow;

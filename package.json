@@ -1,6 +1,6 @@
 {
     "name": "style-objects",
-    "version": "0.22.2",
+    "version": "0.22.3",
     "main": "dist/index.js",
     "module": "src/index.js",
     "scripts": {

@@ -1,9 +1,22 @@
-export function textAlign(textAlign) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.textAlign = textAlign;
+exports.justifyText = exports.rightText = exports.centerText = exports.leftText = void 0;
+
+function textAlign(textAlign) {
   return {
-    textAlign
+    textAlign: textAlign
   };
 }
-export const leftText = textAlign('left');
-export const centerText = textAlign('center');
-export const rightText = textAlign('right');
-export const justifyText = textAlign('justify');
+
+var leftText = textAlign('left');
+exports.leftText = leftText;
+var centerText = textAlign('center');
+exports.centerText = centerText;
+var rightText = textAlign('right');
+exports.rightText = rightText;
+var justifyText = textAlign('justify');
+exports.justifyText = justifyText;

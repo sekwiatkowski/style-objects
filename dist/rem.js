@@ -1,14 +1,29 @@
-import { toString } from 'standard-functions';
-import { eighths, quarters, sixteenths } from './fractions';
-export function rems(units) {
-  return toString(units) + 'rem';
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.rems = rems;
+exports.quarterRems = quarterRems;
+exports.eighthRems = eighthRems;
+exports.sixteenthRems = sixteenthRems;
+
+var _standardFunctions = require("standard-functions");
+
+var _fractions = require("./fractions");
+
+function rems(units) {
+  return (0, _standardFunctions.toString)(units) + 'rem';
 }
-export function quarterRems(units) {
-  return rems(quarters(units));
+
+function quarterRems(units) {
+  return rems((0, _fractions.quarters)(units));
 }
-export function eighthRems(units) {
-  return rems(eighths(units));
+
+function eighthRems(units) {
+  return rems((0, _fractions.eighths)(units));
 }
-export function sixteenthRems(units) {
-  return rems(sixteenths(units));
+
+function sixteenthRems(units) {
+  return rems((0, _fractions.sixteenths)(units));
 }

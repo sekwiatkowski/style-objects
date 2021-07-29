@@ -1,14 +1,23 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.overflowYAuto = exports.overflowXAuto = void 0;
+
 function overflowX(overflowX) {
   return {
-    overflowX
+    overflowX: overflowX
   };
 }
 
 function overflowY(overflowY) {
   return {
-    overflowY
+    overflowY: overflowY
   };
 }
 
-export const overflowXAuto = overflowX('auto');
-export const overflowYAuto = overflowY('auto');
+var overflowXAuto = overflowX('auto');
+exports.overflowXAuto = overflowXAuto;
+var overflowYAuto = overflowY('auto');
+exports.overflowYAuto = overflowYAuto;

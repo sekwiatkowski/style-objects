@@ -1,3 +1,10 @@
-export function degrees(degrees) {
-  return `${degrees}deg`;
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.degrees = degrees;
+
+function degrees(degrees) {
+  return "".concat(degrees, "deg");
 }

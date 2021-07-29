@@ -1,10 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.resizeBoth = exports.noResize = exports.horizontalResize = exports.verticalResize = void 0;
+
 function resize(resize) {
   return {
-    resize
+    resize: resize
   };
 }
 
-export const verticalResize = resize('vertical');
-export const horizontalResize = resize('horizontal');
-export const noResize = resize('none');
-export const resizeBoth = resize('both');
+var verticalResize = resize('vertical');
+exports.verticalResize = verticalResize;
+var horizontalResize = resize('horizontal');
+exports.horizontalResize = horizontalResize;
+var noResize = resize('none');
+exports.noResize = noResize;
+var resizeBoth = resize('both');
+exports.resizeBoth = resizeBoth;

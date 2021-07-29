@@ -1,33 +1,59 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.top = top;
+exports.right = right;
+exports.bottom = bottom;
+exports.left = left;
+exports.left0 = exports.bottom0 = exports.right0 = exports.top0 = exports.fixed = exports.absolute = exports.relative = void 0;
+
 function position(position) {
   return {
-    position
+    position: position
   };
 }
 
-export const relative = position('relative');
-export const absolute = position('absolute');
-export const fixed = position('fixed');
-export function top(top) {
+var relative = position('relative');
+exports.relative = relative;
+var absolute = position('absolute');
+exports.absolute = absolute;
+var fixed = position('fixed');
+exports.fixed = fixed;
+
+function top(top) {
   return {
-    top
+    top: top
   };
 }
-export const top0 = top('0');
-export function right(right) {
+
+var top0 = top('0');
+exports.top0 = top0;
+
+function right(right) {
   return {
-    right
+    right: right
   };
 }
-export const right0 = right('0');
-export function bottom(bottom) {
+
+var right0 = right('0');
+exports.right0 = right0;
+
+function bottom(bottom) {
   return {
-    bottom
+    bottom: bottom
   };
 }
-export const bottom0 = bottom('0');
-export function left(left) {
+
+var bottom0 = bottom('0');
+exports.bottom0 = bottom0;
+
+function left(left) {
   return {
-    left
+    left: left
   };
 }
-export const left0 = left('0');
+
+var left0 = left('0');
+exports.left0 = left0;

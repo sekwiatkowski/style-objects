@@ -1,10 +1,19 @@
-export function color(color) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.color = color;
+exports.backgroundColor = backgroundColor;
+
+function color(color) {
   return {
-    color
+    color: color
   };
 }
-export function backgroundColor(backgroundColor) {
+
+function backgroundColor(backgroundColor) {
   return {
-    backgroundColor
+    backgroundColor: backgroundColor
   };
 }

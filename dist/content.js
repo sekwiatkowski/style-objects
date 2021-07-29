@@ -1,6 +1,16 @@
-export function content(content) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.content = content;
+exports.noContent = void 0;
+
+function content(content) {
   return {
-    content
+    content: content
   };
 }
-export const noContent = content("''");
+
+var noContent = content("''");
+exports.noContent = noContent;

@@ -1,8 +1,17 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.underline = exports.noTextDecoration = void 0;
+
 function textDecoration(textDecoration) {
   return {
-    textDecoration
+    textDecoration: textDecoration
   };
 }
 
-export const noTextDecoration = textDecoration('none');
-export const underline = textDecoration('underline');
+var noTextDecoration = textDecoration('none');
+exports.noTextDecoration = noTextDecoration;
+var underline = textDecoration('underline');
+exports.underline = underline;

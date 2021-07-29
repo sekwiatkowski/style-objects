@@ -1,11 +1,21 @@
-import { joinWithSpace } from 'standard-functions';
-export function outline(width, style, color) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.outline = outline;
+exports.outlineOffset = outlineOffset;
+
+var _standardFunctions = require("standard-functions");
+
+function outline(width, style, color) {
   return {
-    outline: joinWithSpace(width, style, color)
+    outline: (0, _standardFunctions.joinWithSpace)(width, style, color)
   };
 }
-export function outlineOffset(outlineOffset) {
+
+function outlineOffset(outlineOffset) {
   return {
-    outlineOffset
+    outlineOffset: outlineOffset
   };
 }
