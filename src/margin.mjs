@@ -1,4 +1,4 @@
-import {quarterRemStyle} from './base-unit'
+import {quarterRemStyle} from './base-unit.mjs'
 import {merge} from 'standard-functions'
 
 export function margin(margin) {

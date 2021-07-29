@@ -1,4 +1,4 @@
-import {eighthRemStyle, sixteenthRemStyle} from './base-unit'
+import {eighthRemStyle, sixteenthRemStyle} from './base-unit.mjs'
 
 export function fontSize(fontSize) {
     return { fontSize }

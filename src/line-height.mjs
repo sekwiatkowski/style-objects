@@ -1,4 +1,4 @@
-import {absoluteStyle} from './base-unit'
+import {absoluteStyle} from './base-unit.mjs'
 
 export const lineHeight = absoluteStyle(lineHeight => ({ lineHeight }))
 

@@ -1,5 +1,5 @@
 import {toString} from 'standard-functions'
-import {eighths, quarters, sixteenths} from './fractions'
+import {eighths, quarters, sixteenths} from './fractions.mjs'
 
 export function rems(units) {
     return toString(units) + 'rem'

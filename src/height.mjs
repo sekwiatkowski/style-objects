@@ -1,4 +1,4 @@
-import {quarterRemStyle} from './base-unit'
+import {quarterRemStyle} from './base-unit.mjs'
 
 export function height(height) {
     return { height }
