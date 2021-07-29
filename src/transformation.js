@@ -1,5 +1,5 @@
 import {joinWithCommaSpace} from 'standard-functions'
-import {degrees} from './degrees.mjs'
+import {degrees} from './degrees.js'
 
 export function rotate(degrees) {
     return `rotate(${degrees})`

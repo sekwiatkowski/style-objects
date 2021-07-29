@@ -1,5 +1,5 @@
 import {toString} from 'standard-functions'
-import {eighthRems, quarterRems, sixteenthRems} from './rem.mjs'
+import {eighthRems, quarterRems, sixteenthRems} from './rem'
 
 export function baseUnitStyle(applyUnits) {
     return createTag => units => createTag(applyUnits(units))

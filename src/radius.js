@@ -1,4 +1,4 @@
-import {sixteenthRemStyle} from './base-unit.mjs'
+import {sixteenthRemStyle} from './base-unit'
 import {merge} from 'standard-functions'
 
 export function topRightRadius(borderTopRightRadius) {
