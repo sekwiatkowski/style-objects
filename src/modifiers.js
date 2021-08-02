@@ -14,7 +14,7 @@ export const active = modifier('active')
 
 export const focus = modifier('focus')
 
-export const focusVisible = modifier('focusVisible')
+export const focusVisible = modifier('focus-visible')
 
 export const before = modifier('before')
 
