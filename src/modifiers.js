@@ -8,30 +8,18 @@ function modifier(modifier) {
     }
 }
 
-export function visited(...styles) {
-    return modifier ('visited') (styles)
-}
+export const visited = modifier ('visited')
 
-export function hover(...styles) {
-    return modifier ('hover') (styles)
-}
+export const hover = modifier('hover')
 
-export function active(...styles) {
-    return modifier ('active') (styles)
-}
+export const active = modifier('active')
 
-export function focus(...styles) {
-    return modifier ('focus') (styles)
-}
+export const focus = modifier('focus')
 
-export function focusVisible(...styles) {
-    return modifier ('focus-visible') (styles)
-}
+export const focusVisible = modifier('focusVisible')
 
-export function before(...styles) {
-    return modifier ('before') (styles)
-}
+export const before = modifier('before')
 
-export function after(...styles) {
-    return modifier ('after') (styles)
-}
+export const after = modifier('after')
+
+export const disabled = modifier('disabled')

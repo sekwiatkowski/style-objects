@@ -3,13 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.visited = visited;
-exports.hover = hover;
-exports.active = active;
-exports.focus = focus;
-exports.focusVisible = focusVisible;
-exports.before = before;
-exports.after = after;
+exports.disabled = exports.after = exports.before = exports.focusVisible = exports.focus = exports.active = exports.hover = exports.visited = void 0;
 
 var _standardFunctions = require("standard-functions");
 
@@ -33,58 +27,19 @@ function modifier(modifier) {
   };
 }
 
-function visited() {
-  for (var _len = arguments.length, styles = new Array(_len), _key = 0; _key < _len; _key++) {
-    styles[_key] = arguments[_key];
-  }
-
-  return modifier('visited')(styles);
-}
-
-function hover() {
-  for (var _len2 = arguments.length, styles = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-    styles[_key2] = arguments[_key2];
-  }
-
-  return modifier('hover')(styles);
-}
-
-function active() {
-  for (var _len3 = arguments.length, styles = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
-    styles[_key3] = arguments[_key3];
-  }
-
-  return modifier('active')(styles);
-}
-
-function focus() {
-  for (var _len4 = arguments.length, styles = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
-    styles[_key4] = arguments[_key4];
-  }
-
-  return modifier('focus')(styles);
-}
-
-function focusVisible() {
-  for (var _len5 = arguments.length, styles = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
-    styles[_key5] = arguments[_key5];
-  }
-
-  return modifier('focus-visible')(styles);
-}
-
-function before() {
-  for (var _len6 = arguments.length, styles = new Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {
-    styles[_key6] = arguments[_key6];
-  }
-
-  return modifier('before')(styles);
-}
-
-function after() {
-  for (var _len7 = arguments.length, styles = new Array(_len7), _key7 = 0; _key7 < _len7; _key7++) {
-    styles[_key7] = arguments[_key7];
-  }
-
-  return modifier('after')(styles);
-}
+var visited = modifier('visited');
+exports.visited = visited;
+var hover = modifier('hover');
+exports.hover = hover;
+var active = modifier('active');
+exports.active = active;
+var focus = modifier('focus');
+exports.focus = focus;
+var focusVisible = modifier('focusVisible');
+exports.focusVisible = focusVisible;
+var before = modifier('before');
+exports.before = before;
+var after = modifier('after');
+exports.after = after;
+var disabled = modifier('disabled');
+exports.disabled = disabled;
