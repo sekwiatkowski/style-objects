@@ -251,6 +251,19 @@ Object.keys(_margin).forEach(function (key) {
   });
 });
 
+var _modifiers = require("./modifiers");
+
+Object.keys(_modifiers).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (key in exports && exports[key] === _modifiers[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _modifiers[key];
+    }
+  });
+});
+
 var _outline = require("./outline");
 
 Object.keys(_outline).forEach(function (key) {
@@ -394,15 +407,15 @@ Object.keys(_shadows).forEach(function (key) {
   });
 });
 
-var _modifiers = require("./modifiers");
+var _table = require("./table");
 
-Object.keys(_modifiers).forEach(function (key) {
+Object.keys(_table).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
-  if (key in exports && exports[key] === _modifiers[key]) return;
+  if (key in exports && exports[key] === _table[key]) return;
   Object.defineProperty(exports, key, {
     enumerable: true,
     get: function get() {
-      return _modifiers[key];
+      return _table[key];
     }
   });
 });
