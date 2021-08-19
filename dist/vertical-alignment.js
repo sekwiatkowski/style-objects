@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.middle = void 0;
+exports.bottom = exports.middle = exports.top = void 0;
 
 function verticalAlign(verticalAlign) {
   return {
@@ -11,5 +11,9 @@ function verticalAlign(verticalAlign) {
   };
 }
 
+var top = verticalAlign('top');
+exports.top = top;
 var middle = verticalAlign('middle');
 exports.middle = middle;
+var bottom = verticalAlign('bottom');
+exports.bottom = bottom;
