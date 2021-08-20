@@ -2,6 +2,6 @@ function verticalAlign(verticalAlign) {
     return { verticalAlign }
 }
 
-export const top = verticalAlign('top')
-export const middle = verticalAlign('middle')
-export const bottom = verticalAlign('bottom')
+export const alignTop = verticalAlign('top')
+export const alignMiddle = verticalAlign('middle')
+export const alignBottom = verticalAlign('bottom')
