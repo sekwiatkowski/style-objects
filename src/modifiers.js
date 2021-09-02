@@ -1,8 +1,8 @@
-import {isOfLengthOne, merge} from 'standard-functions'
+import {isSingle, merge} from 'standard-functions'
 
 function modifier(modifier) {
     return (...styles) => ({
-        [':' + modifier]: isOfLengthOne(styles) ? styles[0] : merge(...styles)
+        [':' + modifier]: isSingle(styles) ? styles[0] : merge(...styles)
     })
 }
 

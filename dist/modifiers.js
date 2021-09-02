@@ -15,7 +15,7 @@ function modifier(modifier) {
       styles[_key] = arguments[_key];
     }
 
-    return _defineProperty({}, ':' + modifier, (0, _standardFunctions.isOfLengthOne)(styles) ? styles[0] : _standardFunctions.merge.apply(void 0, styles));
+    return _defineProperty({}, ':' + modifier, (0, _standardFunctions.isSingle)(styles) ? styles[0] : _standardFunctions.merge.apply(void 0, styles));
   };
 }
 
