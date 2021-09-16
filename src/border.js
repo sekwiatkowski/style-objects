@@ -5,6 +5,7 @@ function createBorder(property) {
 }
 
 export const border = createBorder('border')
+export const noBorder = {border: '0'}
 
 export const borderTop = createBorder('borderTop')
 export const borderRight = createBorder('borderRight')
@@ -51,12 +52,12 @@ export const borderLeftWidth = borderLeftProperty('width')
 export const borderLeftStyle = borderLeftProperty('style')
 export const borderLeftColor = borderLeftProperty('color')
 
-function noBorder(side) {
+function noSideBorder(side) {
     // The use of "border-[side]: none" caused issues on page changes.
     return sideBorderProperty(side) ('width') ('0')
 }
 
-export const noTopBorder = noBorder('top')
-export const noRightBorder = noBorder('right')
-export const noBottomBorder = noBorder('bottom')
-export const noLeftBorder = noBorder('left')
+export const noTopBorder = noSideBorder('top')
+export const noRightBorder = noSideBorder('right')
+export const noBottomBorder = noSideBorder('bottom')
+export const noLeftBorder = noSideBorder('left')

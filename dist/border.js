@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.borderProperty = borderProperty;
 exports.sideBorderProperty = sideBorderProperty;
-exports.noLeftBorder = exports.noBottomBorder = exports.noRightBorder = exports.noTopBorder = exports.borderLeftColor = exports.borderLeftStyle = exports.borderLeftWidth = exports.borderBottomColor = exports.borderBottomStyle = exports.borderBottomWidth = exports.borderRightColor = exports.borderRightStyle = exports.borderRightWidth = exports.borderTopColor = exports.borderTopStyle = exports.borderTopWidth = exports.borderColor = exports.borderStyle = exports.borderWidth = exports.borderLeft = exports.borderBottom = exports.borderRight = exports.borderTop = exports.border = void 0;
+exports.noLeftBorder = exports.noBottomBorder = exports.noRightBorder = exports.noTopBorder = exports.borderLeftColor = exports.borderLeftStyle = exports.borderLeftWidth = exports.borderBottomColor = exports.borderBottomStyle = exports.borderBottomWidth = exports.borderRightColor = exports.borderRightStyle = exports.borderRightWidth = exports.borderTopColor = exports.borderTopStyle = exports.borderTopWidth = exports.borderColor = exports.borderStyle = exports.borderWidth = exports.borderLeft = exports.borderBottom = exports.borderRight = exports.borderTop = exports.noBorder = exports.border = void 0;
 
 var _standardFunctions = require("standard-functions");
 
@@ -19,6 +19,10 @@ function createBorder(property) {
 
 var border = createBorder('border');
 exports.border = border;
+var noBorder = {
+  border: '0'
+};
+exports.noBorder = noBorder;
 var borderTop = createBorder('borderTop');
 exports.borderTop = borderTop;
 var borderRight = createBorder('borderRight');
@@ -80,16 +84,16 @@ exports.borderLeftStyle = borderLeftStyle;
 var borderLeftColor = borderLeftProperty('color');
 exports.borderLeftColor = borderLeftColor;
 
-function noBorder(side) {
+function noSideBorder(side) {
   // The use of "border-[side]: none" caused issues on page changes.
   return sideBorderProperty(side)('width')('0');
 }
 
-var noTopBorder = noBorder('top');
+var noTopBorder = noSideBorder('top');
 exports.noTopBorder = noTopBorder;
-var noRightBorder = noBorder('right');
+var noRightBorder = noSideBorder('right');
 exports.noRightBorder = noRightBorder;
-var noBottomBorder = noBorder('bottom');
+var noBottomBorder = noSideBorder('bottom');
 exports.noBottomBorder = noBottomBorder;
-var noLeftBorder = noBorder('left');
+var noLeftBorder = noSideBorder('left');
 exports.noLeftBorder = noLeftBorder;
