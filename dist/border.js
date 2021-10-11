@@ -5,24 +5,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.borderProperty = borderProperty;
 exports.sideBorderProperty = sideBorderProperty;
-exports.noLeftBorder = exports.noBottomBorder = exports.noRightBorder = exports.noTopBorder = exports.borderLeftColor = exports.borderLeftStyle = exports.borderLeftWidth = exports.borderBottomColor = exports.borderBottomStyle = exports.borderBottomWidth = exports.borderRightColor = exports.borderRightStyle = exports.borderRightWidth = exports.borderTopColor = exports.borderTopStyle = exports.borderTopWidth = exports.borderColor = exports.borderStyle = exports.borderWidth = exports.borderLeft = exports.borderBottom = exports.borderRight = exports.borderTop = exports.noBorder = exports.border = void 0;
+exports.noLeftBorder = exports.noBottomBorder = exports.noRightBorder = exports.noTopBorder = exports.borderLeftColor = exports.borderLeftStyle = exports.borderLeftWidth = exports.borderBottomColor = exports.borderBottomStyle = exports.borderBottomWidth = exports.borderRightColor = exports.borderRightStyle = exports.borderRightWidth = exports.borderTopColor = exports.borderTopStyle = exports.borderTopWidth = exports.borderColor = exports.borderStyle = exports.borderWidth = exports.noBorder = exports.borderLeft = exports.borderBottom = exports.borderRight = exports.borderTop = exports.border = void 0;
 
 var _standardFunctions = require("standard-functions");
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function createBorder(property) {
-  return function (width, style, color) {
-    return _defineProperty({}, property, (0, _standardFunctions.joinWithSpace)(width, style, color));
+  return function (width) {
+    return function (style) {
+      return function (color) {
+        return _defineProperty({}, property, (0, _standardFunctions.joinWithSpace)(width, style, color));
+      };
+    };
   };
 }
 
 var border = createBorder('border');
 exports.border = border;
-var noBorder = {
-  border: '0'
-};
-exports.noBorder = noBorder;
 var borderTop = createBorder('borderTop');
 exports.borderTop = borderTop;
 var borderRight = createBorder('borderRight');
@@ -31,6 +31,10 @@ var borderBottom = createBorder('borderBottom');
 exports.borderBottom = borderBottom;
 var borderLeft = createBorder('borderLeft');
 exports.borderLeft = borderLeft;
+var noBorder = {
+  border: '0'
+};
+exports.noBorder = noBorder;
 
 function borderProperty(property) {
   return function (value) {
